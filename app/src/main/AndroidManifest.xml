@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mycompany.moneyin" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/money_bag"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Begin"
+            android:label="Money In " >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Second"
+            android:label="Nova Despesa" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Begin" />
+        </activity>
+        <activity
+            android:name=".Three"
+            android:label="Nova Receita" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Begin" />
+        </activity>
+        <activity
+            android:name=".Despesas"
+            android:label="@string/title_activity_despesa" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Begin" />
+        </activity>
+        <activity
+            android:name=".Receitas"
+            android:label="@string/title_activity_receitas" >
+        </activity>
+    </application>
+
+</manifest>

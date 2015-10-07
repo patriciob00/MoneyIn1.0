@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffc9c9c9"
+    tools:context="com.mycompany.moneyin.Receitas"
+    android:id="@+id/RelativeInt1">
+
+    <include
+        android:id="@+id/rec_bar"
+        layout="@layout/rec_bar"/>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_total"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:background="#00ff00" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_total"
+            android:textColor="#000000"
+            android:text="@string/texto_total"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_valor"
+            android:textColor="#000000"
+            android:text="@string/texto_valor"
+            android:textSize="25sp"
+            android:layout_alignTop="@+id/text_total"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="48dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

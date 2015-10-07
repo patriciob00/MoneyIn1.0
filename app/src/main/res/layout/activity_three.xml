@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffc9c9c9"
+    tools:context="com.mycompany.moneyin.Second">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/three_bar"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/valor"
+        android:src="@drawable/ic_valor"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/app_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="54dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:ems="10"
+        android:id="@+id/editValor"
+        android:layout_alignBottom="@+id/valor"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/colorprimaryDark"
+        android:hint="Insira o valor"
+        android:maxLines="3"
+        android:numeric="decimal"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:textColorHint="#fff" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Data"
+        android:src="@drawable/ic_go_to_today"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/valor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="54dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editDataRec"
+        android:backgroundTint="@color/colorprimaryDark"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignTop="@+id/Data"
+        android:layout_marginTop="-10dp"
+        android:textColor="#000000"
+        android:focusable="false"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editar"
+        android:src="@drawable/ic_edit"
+        android:layout_below="@+id/Data"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/editEditar"
+        android:backgroundTint="@color/colorprimaryDark"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignTop="@+id/editar"
+        android:layout_marginTop="-10dp"
+        android:hint="Descrição"
+        android:textColor="#000000"
+        android:textColorHint="#fff"
+        android:textStyle="normal" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/categoriaReceita"
+        android:layout_below="@+id/editEditar"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:dropDownSelector="@color/colorprimaryDark"
+        android:spinnerMode="dropdown"
+        android:theme="@style/MyCustomSpinnerTheme"/>
+
+    <ImageView
+        android:id="@+id/catLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_labels"
+        android:layout_alignBottom="@+id/categoriaReceita"
+        android:layout_alignLeft="@+id/editar"
+        android:layout_alignStart="@+id/editar"
+        android:layout_marginBottom="15dp" />
+
+</RelativeLayout>

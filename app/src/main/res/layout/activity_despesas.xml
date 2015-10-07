@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffc9c9c9"
+    tools:context="com.mycompany.moneyin.Despesas"
+    android:id="@+id/RelativeInt">
+
+   <include
+       android:id="@+id/desp_bar"
+       layout="@layout/toolbardespesa"/>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_total"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ff0000" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_total"
+            android:textColor="#000000"
+            android:text="@string/texto_total"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_valorDes"
+            android:textColor="#000000"
+            android:text="@string/texto_valor"
+            android:textSize="25sp"
+            android:layout_alignTop="@+id/text_total"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="48dp" />
+
+
+        </RelativeLayout>
+
+</RelativeLayout>

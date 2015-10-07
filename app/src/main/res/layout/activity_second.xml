@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffc9c9c9"
+    tools:context="com.mycompany.moneyin.Second">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/second_bar"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/valor"
+        android:src="@drawable/ic_valor"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/app_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="54dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/editValor"
+        android:backgroundTint="#ff0000"
+        android:hint="Insira o valor"
+        android:maxLines="3"
+        android:numeric="signed"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:textColorHint="#fff"
+        android:layout_alignTop="@+id/valor"
+        android:layout_alignLeft="@+id/editDataDes"
+        android:layout_alignStart="@+id/editDataDes"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Data"
+        android:src="@drawable/ic_go_to_today"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/valor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="54dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editDataDes"
+        android:backgroundTint="#ff0000"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignTop="@+id/Data"
+        android:layout_marginTop="-5dp"
+        android:focusable="false"
+        android:textColor="#000" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditarImg"
+        android:src="@drawable/ic_edit"
+        android:layout_below="@+id/Data"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/editEditar"
+        android:backgroundTint="#ff0000"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignTop="@+id/EditarImg"
+        android:layout_marginTop="-5dp"
+        android:hint="Descrição"
+        android:textColor="#000000"
+        android:textColorHint="#fff"
+        android:textStyle="normal" />
+    
+    <Spinner
+        android:id="@+id/categoriaDespesa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/promptSpinner"
+        android:dropDownSelector="#ff0000"
+        android:layout_below="@+id/editEditar"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:spinnerMode="dropdown"
+        android:theme="@style/MyCustomSpinnerTheme"
+        android:touchscreenBlocksFocus="false" />
+
+    <ImageView
+        android:id="@+id/EditLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_labels"
+        android:layout_alignBottom="@+id/categoriaDespesa"
+        android:layout_alignLeft="@+id/EditarImg"
+        android:layout_alignStart="@+id/EditarImg"
+        android:layout_marginBottom="15dp" />
+
+
+
+</RelativeLayout>
